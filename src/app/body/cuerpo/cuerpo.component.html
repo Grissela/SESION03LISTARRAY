@@ -1,0 +1,24 @@
+
+<div class="container w-25 mx-auto border p-5 mt-3">
+    <div class="row">
+        <div class="col-1 col-md-2 fs-2" >
+            <i class="bi bi-card-checklist"></i>
+        </div>
+        <div class="col col-md-8" >
+            <input class="form-control mb-3" type="text" #name placeholder="javascript">
+        </div>
+        <div class="col col-md-2">
+            <button (click)="curso(name.value)" class="btn btn-danger rounded-circle p-3">add</button>
+        </div>
+    </div>
+
+
+    <div *ngFor="let n of arraycurso">
+        <li>
+            {{n}}
+        </li>
+
+    </div>
+</div>
+  
+    
